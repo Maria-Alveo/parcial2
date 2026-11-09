@@ -225,7 +225,7 @@ img {
 }
 
 .section {
-    padding-block: clamp(2rem, 5vw, 4rem);
+    padding-block: clamp(1rem, 2.5vw, 2rem);
 }
 
 .section-heading {
@@ -379,4 +379,29 @@ figure.card p {
     font-size: 0.85rem;
     margin-top: 0.75rem;
     color: #698696;
+}
+
+.tip-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tip-description {
+    margin-bottom: 1.2rem;
+}
+
+.tip-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #121c24;
+    border: 1px solid #243C4C;
+    color: #ACBCBF;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.tip-box strong {
+    color: #F4FCFB;
 }
