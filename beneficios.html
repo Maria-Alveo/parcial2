@@ -63,6 +63,23 @@
             </div>
         </section>
 
+        <section class="section" aria-labelledby="tip-title">
+            <div class="section-heading">
+                <p class="eyebrow">DATO RÁPIDO</p>
+                <h2 id="tip-title">Tip de Seguridad en Capa 7</h2>
+            </div>
+            
+            <article class="card tip-card">
+                <p class="tip-description">Haz clic en el botón para visualizar una recomendación WAF:</p>
+                
+                <button type="button" id="btnTip" class="button">Generar Consejo</button>
+                
+                <div id="tipBox" class="tip-box">
+                    <em>Haz clic en el botón para visualizar el consejo de seguridad.</em>
+                </div>
+            </article>
+        </section>
+
         <section class="section operation-section">
             <div class="section-heading">
                 <p class="eyebrow">SEGURIDAD WEB</p>
@@ -70,7 +87,7 @@
             </div>
 
             <div class="card">
-                <p style="margin-bottom: 1rem;">El proyecto OWASP Top 10 recopila los riesgos de seguridad más críticos en aplicaciones web. Un WAF implementa contramedidas automatizadas específicas para bloquear los siguientes ataques:</p>
+                <p style="margin-bottom: 0.5rem;">El proyecto OWASP Top 10 recopila los riesgos de seguridad más críticos en aplicaciones web. Un WAF implementa contramedidas automatizadas específicas para bloquear los siguientes ataques:</p>
                 
                 <ul class="operation-list">
                     <li><strong>Inyecciones SQL (SQLi):</strong> Bloquea intentos de introducir consultas de bases de datos maliciosas a través de formularios o parámetros de URL.</li>
@@ -80,6 +97,7 @@
                 </ul>
             </div>
         </section>
+        
 
     </main>
 
@@ -90,5 +108,6 @@
             <a href="#contenido">Volver arriba</a>
         </div>
     </footer>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
