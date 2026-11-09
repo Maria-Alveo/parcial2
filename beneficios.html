@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce los tipos de Web Application Firewall (WAF), sus beneficios y cómo protegen frente a las vulnerabilidades del OWASP Top 10.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tipos y Beneficios | Web Application Firewall (WAF)</title>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">◉</span> WAF SECURITY
+                <span class="brand-subtitle">Protección en Capa 7</span>
+            </a>
+            
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="funcionamiento.html">Funcionamiento</a></li>
+    <li><a href="beneficios.html">Tipos y Beneficios</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+</ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        
+        <section class="page-intro" aria-labelledby="beneficios-title">
+            <p class="eyebrow">CLASIFICACIÓN Y DEFENSA</p>
+            <h1 id="beneficios-title">Tipos de WAF y Mitigación de Amenazas</h1>
+            <p class="lead">Explora las diferentes arquitecturas en las que se despliegan los WAF y cómo blindan las aplicaciones ante los vectores de ataque más críticos.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">ARQUITECTURAS</p>
+                <h2>Clasificación de los Web Application Firewalls</h2>
+            </div>
+
+            <div class="card-list">
+                <article class="card">
+                    <span class="card-number">01. HARDWARE O RED</span>
+                    <h3>WAF Basado en Red</h3>
+                    <p>Instalados localmente en el centro de datos como dispositivos físicos de hardware. Al estar cerca de los servidores locales, reducen la latencia de red, aunque su implementación implica altos costos iniciales de infraestructura y mantenimiento físico.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">02. SOFTWARE O HOST</span>
+                    <h3>WAF Basado en Host</h3>
+                    <p>Integrados directamente en el software del servidor web o implementados como módulos dentro de la propia aplicación. Ofrece un alto nivel de personalización adaptado al código fuente específico, aunque puede consumir recursos de procesamiento del servidor.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-number">03. NUBE (CLOUD / SAAS)</span>
+                    <h3>WAF Basado en la Nube</h3>
+                    <p>Soluciones ofrecidas como servicio (SaaS) por proveedores globales de ciberseguridad. Son altamente escalables, fáciles de desplegar mediante la redirección de DNS y se actualizan automáticamente ante nuevas firmas de ataques emergentes en internet.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section operation-section">
+            <div class="section-heading">
+                <p class="eyebrow">SEGURIDAD WEB</p>
+                <h2>Protección frente al OWASP Top 10</h2>
+            </div>
+
+            <div class="card">
+                <p style="margin-bottom: 1rem;">El proyecto OWASP Top 10 recopila los riesgos de seguridad más críticos en aplicaciones web. Un WAF implementa contramedidas automatizadas específicas para bloquear los siguientes ataques:</p>
+                
+                <ul class="operation-list">
+                    <li><strong>Inyecciones SQL (SQLi):</strong> Bloquea intentos de introducir consultas de bases de datos maliciosas a través de formularios o parámetros de URL.</li>
+                    <li><strong>Cross-Site Scripting (XSS):</strong> Filtra scripts maliciosos intentando ejecutarse en los navegadores de los usuarios legítimos de la plataforma.</li>
+                    <li><strong>Falsificación de Peticiones (CSRF):</strong> Detecta y mitiga solicitudes no autorizadas realizadas en nombre de un usuario autenticado.</li>
+                    <li><strong>Denegación de Servicio en Capa 7 (DDoS):</strong> Absorbe y mitiga picos de tráfico abusivo diseñados para colapsar los recursos lógicos de la aplicación.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <p>Parcial 2 - Desarrollo de Software V</p>
+            <p>Tema: Web Application Firewall (WAF)</p>
+            <a href="#contenido">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+</html>

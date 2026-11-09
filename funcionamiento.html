@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el funcionamiento técnico de un Web Application Firewall (WAF) en la Capa 7 y su flujo de intercepción de tráfico.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Funcionamiento | Web Application Firewall (WAF)</title>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">◉</span> WAF SECURITY
+                <span class="brand-subtitle">Protección en Capa 7</span>
+            </a>
+            
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="funcionamiento.html">Funcionamiento</a></li>
+    <li><a href="beneficios.html">Tipos y Beneficios</a></li>
+    <li><a href="galeria.html">Galería</a></li>
+</ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        
+        <section class="page-intro" aria-labelledby="func-title">
+            <p class="eyebrow">ARQUITECTURA Y FLUJO TÉCNICO</p>
+            <h1 id="func-title">¿Cómo opera un WAF?</h1>
+            <p class="lead">Análisis detallado de la inspección de tráfico en tiempo real y su ubicación estratégica entre el cliente y el servidor de aplicaciones.</p>
+        </section>
+
+        <div class="card-list">
+            <article class="card">
+                <span class="card-number">01. CAPA DE APLICACIÓN</span>
+                <h3>Inspección en la Capa 7 del Modelo OSI</h3>
+                <p>A diferencia de los firewalls tradicionales orientados a paquetes de red o control de puertos IP, un WAF se ubica estratégicamente en la <strong>Capa 7</strong>. Esto le otorga visibilidad completa sobre los datos de las solicitudes HTTP y HTTPS, permitiendo comprender estructuras complejas como consultas SQL, parámetros de formularios y cabeceras de sesión.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-number">02. INTERCEPCIÓN</span>
+                <h3>El Flujo de Solicitud y Respuesta</h3>
+                <p>Cuando un usuario interactúa con una aplicación web, la petición no llega directamente al servidor de origen. Primero es interceptada por el WAF, el cual evalúa los datos aplicando reglas de seguridad predefinidas. Si la solicitud es legítima, se reenvía al servidor; si es maliciosa, el WAF interrumpe la conexión y bloquea el ataque.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-number">03. MÉTODOS DE ANÁLISIS</span>
+                <h3>Firmas y Análisis Heurístico</h3>
+                <p>Los WAF emplean múltiples motores de detección. El <em>análisis basado en firmas</em> compara el tráfico con patrones conocidos de ataques cibernéticos. Por otro lado, la <em>detección basada en anomalías</em> identifica desviaciones del funcionamiento normal de la aplicación, protegiendo frente a amenazas de cero días.</p>
+            </article>
+        </div>
+
+        <section class="section operation-section" aria-labelledby="secuencia-title">
+            <div class="section-heading">
+                <p class="eyebrow">PASO A PASO</p>
+                <h2 id="secuencia-title">Secuencia operativa en el servidor</h2>
+            </div>
+            
+            <div class="card">
+                <ol class="operation-list">
+                    <li><strong>Envío de la Petición:</strong> El cliente (navegador o dispositivo) genera una solicitud HTTP/HTTPS hacia el sitio web.</li>
+                    <li><strong>Intercepción Perimetral:</strong> El WAF recibe y analiza la solicitud antes de que impacte en los servidores backend o bases de datos.</li>
+                    <li><strong>Filtrado y Evaluación:</strong> Se inspeccionan cargas útiles (*payloads*), cookies y argumentos en busca de código malicioso o patrones de inyección.</li>
+                    <li><strong>Acción Definitiva:</strong> Se permite el tránsito limpio hacia el servidor web o se bloquea la ejecución retornando una respuesta de acceso denegado.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <p>Parcial 2 - Desarrollo de Software V</p>
+            <p>Tema: Web Application Firewall (WAF)</p>
+            <a href="#contenido">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+</html>

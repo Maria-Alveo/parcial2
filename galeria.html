@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de diagramas y esquemas visuales sobre el funcionamiento de un Web Application Firewall (WAF).">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Galería y Diagramas | WAF Security</title>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">◉</span> WAF SECURITY
+                <span class="brand-subtitle">Protección en Capa 7</span>
+            </a>
+            
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="funcionamiento.html">Funcionamiento</a></li>
+                    <li><a href="beneficios.html">Tipos y Beneficios</a></li>
+                    <li><a href="galeria.html" class="activo" aria-current="page">Galería</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        
+        <section class="page-intro" aria-labelledby="gallery-title">
+            <p class="eyebrow">ESQUEMAS VISUALES Y ARQUITECTURA</p>
+            <h1 id="gallery-title">Diagramas de Seguridad WAF</h1>
+            <p class="lead">Explora representaciones visuales de cómo el tráfico malicioso es interceptado y neutralizado en la capa de aplicación.</p>
+        </section>
+
+        <div class="card-list" style="margin-bottom: 4rem;">
+            
+            <figure class="card">
+                <img src="IMG/Implementación de WAF.jpg" width="800" height="450" alt="Diagrama de topología de red mostrando la posición del WAF frente al servidor web" loading="lazy">
+                <figcaption>
+                    <span class="card-number">01. TOPOLOGÍA</span>
+                    <h2>Posicionamiento Perimetral</h2>
+                    <p>Ubicación estratégica del WAF interceptando peticiones antes de llegar al servidor backend.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card">
+                <img src="IMG/OWASP.jpg" width="800" height="450" alt="Esquema de mitigación de ataques orientados al OWASP Top 10" loading="lazy">
+                <figcaption>
+                    <span class="card-number">02. AMENAZAS</span>
+                    <h2>Mitigación OWASP Top 10</h2>
+                    <p>Filtrado activo de inyecciones SQL y ataques de secuencias de comandos en sitios cruzados (XSS).</p>
+                </figcaption>
+            </figure> 
+
+            <figure class="card">
+                <img src="IMG/403.jpg" width="800" height="450" alt="Bloqueo de una petición maliciosa con código HTTP 403" loading="lazy">
+                <figcaption>
+                    <span class="card-number">03. RESPUESTA</span>
+                    <h2>Bloqueo de Tráfico Malicioso</h2>
+                    <p>Respuesta automatizada denegando el acceso (Código 403) ante una firma de ataque detectada.</p>
+                </figcaption>
+            </figure>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <p>Parcial 2 - Desarrollo de Software V</p>
+            <p>Tema: Web Application Firewall (WAF)</p>
+            <a href="#contenido">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+</html>
